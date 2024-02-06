@@ -2,18 +2,18 @@ pipeline {
     agent any
 
     stages {
-        stage('checkout') {
+        stage('Build') {
             steps {
                 echo "code is changing"
             }
 
         }
-        stage('build'){
+        stage('Test'){
             steps {
                 echo "build with the help of maven"
             }
         }
-        stage('deploy'){
+        stage('Deploy'){
             steps{
                 echo "deploy to the applications"
             }
