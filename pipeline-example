@@ -4,18 +4,18 @@ pipeline {
     stages {
         stage('checkout') {
             steps {
-                echo "Hello world"
+                echo "code is changing"
             }
 
         }
         stage('build'){
             steps {
-                echo "Hi there"
+                echo "build with the help of maven"
             }
         }
         stage('deploy'){
             steps{
-                echo "Hello there"
+                echo "deploy to the applications"
             }
         }
     }
